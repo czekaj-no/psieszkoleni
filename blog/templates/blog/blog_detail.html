@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ post.title }} - Porady{% endblock %}
+
+{% block content %}
+<article class="blog-detail">
+    <h1>{{ post.title }}</h1>
+    <p class="blog-date"><em>{{ post.created_at|date:"d.m.Y H:i" }}</em></p>
+    {% if post.image %}
+        <img src="{{ post.image.url }}" alt="{{ post.title }}" class="blog-detail-image">
+    {% endif %}
+    <div class="blog-content">
+        {{ post.content|linebreaks }}
+    </div>
+    <p><a href="{% url 'blog_list' %}" class="back-link">← Powrót do listy porad</a></p>
+</article>
+{% endblock %}
