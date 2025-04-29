@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+O mnie
+{% endblock %}
+
+{% block content %}
+<section class="about-intro">
+  <div class="about-wrapper">
+    <div class="about-text">
+      <h2>To ja - Twoja psia ekspertka</h2>
+      <p>
+        Cześć! Nazywam się Imię Nazwisko i od lat pomagam opiekunom lepiej rozumieć swoje psy.
+        Moim celem jest budowanie relacji opartych na zaufaniu, komunikacji i pozytywnym podejściu.
+      </p>
+      <p>
+        Ukończyłam wiele szkoleń i kursów z zakresu behawiorystyki, treningu i pracy z psami lękliwymi, reaktywnymi i adopcyjnymi.
+      </p>
+        <p>
+        Cześć! Nazywam się Imię Nazwisko i od lat pomagam opiekunom lepiej rozumieć swoje psy.
+        Moim celem jest budowanie relacji opartych na zaufaniu, komunikacji i pozytywnym podejściu.
+      </p>
+      <p>
+        Ukończyłam wiele szkoleń i kursów z zakresu behawiorystyki, treningu i pracy z psami lękliwymi, reaktywnymi i adopcyjnymi.
+      </p>
+
+          <p>
+        Ukończyłam wiele szkoleń i kursów z zakresu behawiorystyki, treningu i pracy z psami lękliwymi, reaktywnymi i adopcyjnymi.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="{% static 'img/trenerka.jpg' %}" alt="Trenerka Psów">
+    </div>
+  </div>
+</section>
+
+<section class="carousel-section">
+  <h2>Ukończyłam takie kursy i szkolenia</h2>
+  <div class="carousel-container">
+<div class="carousel-wrapper-with-arrows">
+  <button class="carousel-btn carousel-prev"><i class="fas fa-chevron-left"></i></button>
+    <div class="carousel-track-wrapper">
+      <div class="carousel-track">
+        <div class="carousel-item">
+          <h3>Kurs Trenera Psów</h3>
+          <img src="{% static 'img/kurs-1.jpg' %}" alt="Kurs Trenera Psów">
+            <p>Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia.</p>
+        </div>
+        <div class="carousel-item">
+          <h3>Behawioryzm Zwierząt</h3>
+          <img src="{% static 'img/kurs-2.jpg' %}" alt="Behawioryzm Zwierząt">
+              <p>Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia.</p>
+        </div>
+        <div class="carousel-item">
+          <h3>Szkolenie z Psami Lękliwymi</h3>
+          <img src="{% static 'img/kurs-3.jpg' %}" alt="Szkolenie z psami lękliwymi">
+              <p>Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia.</p>
+        </div>
+        <div class="carousel-item">
+          <h3>Szkolenie Online z Komunikacji</h3>
+          <img src="{% static 'img/kurs-4.jpg' %}" alt="Komunikacja">
+              <p>Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia.</p>
+        </div>
+        <div class="carousel-item">
+          <h3>Kurs Adopcji Psów</h3>
+          <img src="{% static 'img/kurs-5.jpg' %}" alt="Adopcja psów">
+              <p>Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia.</p>
+        </div>
+        <div class="carousel-item">
+          <h3>Podstawy Treningu</h3>
+          <img src="{% static 'img/kurs-6.jpg' %}" alt="Podstawy treningu">
+              <p>Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia.</p>
+        </div>
+        <div class="carousel-item">
+          <h3>Zaawansowany Trening</h3>
+          <img src="{% static 'img/kurs-7.jpg' %}" alt="Zaawansowany trening">
+              <p>Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia.</p>
+        </div>
+        <div class="carousel-item">
+          <h3>Warsztaty Grupowe</h3>
+          <img src="{% static 'img/kurs-8.jpg' %}" alt="Warsztaty grupowe">
+              <p>Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia. Krótki opis kursu/szkolenia.</p>
+        </div>
+      </div>
+    </div>
+
+  <button class="carousel-btn carousel-next"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</section>
+
+<section class="results-section">
+  <div class="results-wrapper">
+    <h2 class="results-heading">
+      Od 2019 roku Pomogłam już <span class="counter">235</span> pieskom i właścicielom
+    </h2>
+    <p class="results-subheading">Zobacz, jak pomogę Tobie i Twojemu pupilowi</p>
+
+    <div class="benefits-columns">
+      <div class="benefit-column">
+        <ul>
+          <li><span class="check">✔</span> Nauczę Cię, jak czytać sygnały wysyłane przez psa</li>
+          <li><span class="check">✔</span> Rozwiążemy trudne zachowania – agresja, lęk, nadpobudliwość</li>
+          <li><span class="check">✔</span> Pokażę Ci, jak spokojnie spacerować bez ciągnięcia na smyczy</li>
+          <li><span class="check">✔</span> Pomogę Ci zbudować pewność siebie u psa lękliwego</li>
+        </ul>
+      </div>
+      <div class="benefit-column">
+        <ul>
+          <li><span class="check">✔</span> Pokażę, jak mądrze wprowadzić zasady w domu bez krzyków i kar</li>
+          <li><span class="check">✔</span> Wytłumaczę, jak motywować psa do nauki przez zabawę</li>
+          <li><span class="check">✔</span> Pomogę w adaptacji psa adoptowanego do nowego życia</li>
+          <li><span class="check">✔</span> Przygotuję Was do wspólnego życia w spokoju i harmonii</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-section">
+  <h2>Zobacz nas w akcji!</h2>
+
+  <div class="gallery-grid">
+  <a href="{% static 'img/akcja1.jpg' %}" class="glightbox"><img src="{% static 'img/akcja1.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja2.jpg' %}" class="glightbox"><img src="{% static 'img/akcja2.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja3.jpg' %}" class="glightbox"><img src="{% static 'img/akcja3.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja4.jpg' %}" class="glightbox"><img src="{% static 'img/akcja4.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja5.jpg' %}" class="glightbox"><img src="{% static 'img/akcja5.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja6.jpg' %}" class="glightbox"><img src="{% static 'img/akcja6.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja7.jpg' %}" class="glightbox"><img src="{% static 'img/akcja7.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja8.jpg' %}" class="glightbox"><img src="{% static 'img/akcja8.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja9.jpg' %}" class="glightbox"><img src="{% static 'img/akcja9.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja10.jpg' %}" class="glightbox"><img src="{% static 'img/akcja10.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja11.jpg' %}" class="glightbox"><img src="{% static 'img/akcja11.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja12.jpg' %}" class="glightbox"><img src="{% static 'img/akcja12.jpg' %}" alt=""></a>
+</div>
+
+<div class="button-group">
+  <a href="/szkolenia" class="cta-button">Dołącz do nas</a>
+  <a href="#" class="cta-button dark">Zobacz więcej zdjęć</a>
+</div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Psieszkoleni{% endblock %}</title>
+
+    <!-- Ładowanie pliku CSS -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <div class="page-container">
+
+
+    <header>
+        <div class="logo">
+            <a href="/"><img src="{% static 'img/logopsieszkoleni.png' %}" alt="Logo Psieszkoleni" /></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="/">Strona Główna</a></li>
+                <li><a href="/szkolenia/">Szkolenia</a></li>
+                <li><a href="/konsultacje/">Konsultacje</a></li>
+                <li><a href="/porady/">Porady</a></li>
+                <li><a href="/o-mnie/">O mnie</a></li>
+                <li><a href="/galeria/">Galeria</a></li>
+                <li><a href="/kontakt/">Kontakt</a></li>
+                <li><a href="tel:+48123456789" class="cta-button">📞 123 456 789</a></li>
+
+            </ul>
+        </nav>
+    </header>
+  <main>
+
+        {% block content %}
+        {% endblock %}
+    </main>
+
+<footer>
+    <div class="footer-columns">
+        <!-- Kolumna 1: Logo + opis -->
+        <div class="footer-col">
+            <img src="{% static 'img/logopsieszkolenifooter.png' %}" alt="Logo Psieszkoleni" class="footer-logo">
+        <p>Psieszkoleni to miejsce, w którym budujemy relacje między Tobą a Twoim psem .</p>
+
+        <p>Pracujemy z psami i ich opiekunami indywidualnie i w grupach. </p>
+
+        <p>U nas liczy się zaufanie, konsekwencja i dobra zabawa.</p>
+            <p>Dołącz do nas!</p>
+
+
+
+        </div>
+
+        <!-- Kolumna 2: Kontakt -->
+        <div class="footer-col">
+            <h4>Kontakt</h4>
+            <p>📞 <a href="tel:+48123456789">123 456 789</a></p>
+            <p>✉️ <a href="mailto:kontakt@psieszkoleni.pl">kontakt@psieszkoleni.pl</a></p>
+            <p>📍 Łódź i okolice</p>
+            <p>🕒 Pon–Sb: 10:00–18:00</p>
+          <div class="social-icons circle-icons">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+    </a>
+</div>
+
+        </div>
+
+        <!-- Kolumna 3: Linki + quiz -->
+        <div class="footer-col">
+            <h4>Na skróty</h4>
+            <ul>
+                <li><a href="/szkolenia/">Szkolenia</a></li>
+                <li><a href="/konsultacje/">Konsultacje</a></li>
+                <li><a href="/porady/">Porady</a></li>
+                <li><a href="/o-mnie/">O mnie</a></li>
+                <li><a href="/galeria/">Galeria</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+   <div class="footer-bottom">
+    <div class="footer-bottom-links">
+        <a href="/polityka-prywatnosci/">Polityka Prywatności</a> |
+        <a href="/regulamin/">Regulamin</a>
+    </div>
+    <p>© 2025 Psieszkoleni. Wszystkie prawa zastrzeżone.</p>
+</div>
+
+</footer>
+
+    <!-- Ładowanie pliku JS -->
+    <script src="{% static 'js/main.js' %}"></script>
+  </div>
+</body>
+</html>

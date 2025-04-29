@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="contact-section">
+  <div class="contact-wrapper">
+
+    <div class="contact-info">
+      <h2>Skontaktuj się ze mną</h2>
+      <p>📞 <a href="tel:+48123456789">123 456 789</a></p>
+      <p>✉️ <a href="mailto:kontakt@psieszkoleni.pl">kontakt@psieszkoleni.pl</a></p>
+      <p>📍Łódź i okolice</p>
+      <p>🕒 Pon–Sb: 10:00–18:00</p>
+      <h2>Informacje o mojej firmie</h2>
+        <p>Psieszkoleni Imię Nazwisko</br>ul. Ulicowa 123</br>12-345 Łódź</br>NIP: 1112233444</br>Nr konta: 2343 4565 2395 3475 1232 123</p>
+
+          </div>
+
+    <div class="contact-map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111752.13489742167!2d19.378396128380935!3d51.76235576209715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bcb24754556af%3A0xcb7cae639b21dbac!2zxYHDs2TFug!5e0!3m2!1spl!2spl!4v1745491319572!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact-form">
+  <h2>Napisz do mnie</h2>
+  <form method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="name">Imię i nazwisko/Nazwa firmy</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Adres e-mail</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Wiadomość</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+    </div>
+
+    <button type="submit" class="cta-button">Wyślij wiadomość</button>
+  </form>
+</section>
+
+
+
+
+</section>
+
+{% endblock %}

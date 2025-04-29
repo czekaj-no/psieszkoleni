@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Strona Główna - Psieszkoleni
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Pomagam właścicielom i ich psom żyć w harmonii</h1>
+      <p>Setki właścicieli zaufały moim metodom pracy. Skorzystaj z wiedzy i doświadczenia, aby poprawić relację ze swoim psem!</p>
+      <div class="hero-buttons">
+        <a href="konsultacje" class="hero-btn-outline">Umów konsultację</a>
+        <a href="szkolenia" class="hero-btn-solid">Zobacz szkolenia</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="{% static 'img/hero-doggy.png' %}" alt="Szczęśliwy pies i właściciel">
+    </div>
+  </div>
+</section>
+
+<section class="benefits">
+  <div class="container">
+    <h2>Dlaczego warto ze mną pracować?</h2>
+    <div class="benefit-cards">
+
+      <div class="benefit-card">
+        <h3>96% sukcesów</h3>
+        <p>Moje metody pomogły poprawić zachowanie 96% psów w ciągu pierwszych 8 tygodni współpracy.</p>
+      </div>
+
+      <div class="benefit-card">
+        <h3>Setki zadowolonych właścicieli</h3>
+        <p>Ponad 200 właścicieli zaufało mi, by lepiej zrozumieć potrzeby swojego psa i zbudować trwałą więź.</p>
+      </div>
+
+      <div class="benefit-card">
+        <h3>5+ lat doświadczenia</h3>
+        <p>Od ponad 5 lat pomagam psom lękliwym, nadpobudliwym i agresywnym wrócić do równowagi emocjonalnej.</p>
+      </div>
+
+      <div class="benefit-card">
+        <h3>Indywidualne podejście</h3>
+        <p>Każde szkolenie dopasowuję do charakteru psa i oczekiwań opiekuna — bez szablonów i schematów.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="container about-wrapper">
+    <div class="about-text">
+      <h2>Dlaczego możesz mi zaufać?</h2>
+      <p>Od lat pomagam opiekunom budować harmonijne relacje z ich psami. Ukończyłam dziesiątki szkoleń z behawioryzmu i treningu psów lękliwych, reaktywnych oraz adopcyjnych.</p>
+      <p>W pracy stawiam na komunikację, zrozumienie i metody pozytywne. Moje doświadczenie i pasja pomogły już ponad <strong>230 psom i ich właścicielom</strong>!</p>
+        <p>Ukończyłam dziesiątki szkoleń z behawioryzmu i treningu psów lękliwych, reaktywnych oraz adopcyjnych.</p>
+      <p>W pracy stawiam na komunikację, zrozumienie i metody pozytywne. Moje doświadczenie i pasja pomogły już ponad <strong>230 psom i ich właścicielom</strong>!</p>
+      <a href="/o-mnie/" class="cta-button">Dowiedz się o mnie więcej</a>
+    </div>
+    <div class="about-image">
+      <img src="{% static 'img/dog-loverr.jpg' %}" alt="Trenerka z psem">
+    </div>
+  </div>
+</section>
+
+
+<section class="testimonials-section">
+  <div class="about-text">
+  <h2>Poznaj opinie moich klientów</h2>
+  </div>
+
+  <div class="testimonial-carousel">
+    <div class="testimonial-track">
+      <div class="testimonial-item">
+        <img src="{% static 'img/akcja2.jpg' %}" alt="Anna i Luna">
+        <div class="testimonial-text">
+          <p>"Po 3 spotkaniach mój pies przestał ciągnąć na smyczy. Wreszcie spacery to czysta przyjemność! Po 3 spotkaniach mój pies przestał ciągnąć na smyczy. Wreszcie spacery to czysta przyjemność!"</p>
+          <h4>Anna, właścicielka Luny</h4>
+        </div>
+      </div>
+
+      <div class="testimonial-item">
+        <img src="{% static 'img/akcja3.jpg' %}" alt="Michał i Burek">
+        <div class="testimonial-text">
+          <p>"Dzięki profesjonalnemu podejściu mój pies przestał bać się ludzi. Polecam z całego serca! Dzięki profesjonalnemu podejściu mój pies przestał bać się ludzi. Polecam z całego serca!"</p>
+          <h4>Michał, właściciel Burka</h4>
+        </div>
+      </div>
+
+      <div class="testimonial-item">
+        <img src="{% static 'img/akcja4.jpg' %}" alt="Kasia i Bella">
+        <div class="testimonial-text">
+          <p>"Świetne szkolenia, pełne empatii i wiedzy. Bella jest innym psem! Świetne szkolenia, pełne empatii i wiedzy. Bella jest innym psem!"</p>
+          <h4>Kasia, właścicielka Belli</h4>
+        </div>
+      </div>
+
+      <div class="testimonial-item">
+        <img src="{% static 'img/akcja5.jpg' %}" alt="Paweł i Max">
+        <div class="testimonial-text">
+          <p>"Szkolenia grupowe bardzo nam pomogły. Max stał się spokojniejszy wśród innych psów. Szkolenia grupowe bardzo nam pomogły. Max stał się spokojniejszy wśród innych psów."</p>
+          <h4>Paweł, właściciel Maxa</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="upcoming-trainings">
+  <div class="container">
+    <h2>Najbliższe szkolenia</h2>
+    <div class="trainings-list" id="trainings-list">
+      <!-- Szkolenia będą wstawiane automatycznie przez JS -->
+    </div>
+  </div>
+</section>
+
+
+<section class="gallery-section">
+  <h2>Tak się szkolimy - bez stresu, z uśmiechem na twarzy!</h2>
+
+  <div class="gallery-grid">
+  <a href="{% static 'img/akcja1.jpg' %}" class="glightbox"><img src="{% static 'img/akcja1.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja2.jpg' %}" class="glightbox"><img src="{% static 'img/akcja2.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja3.jpg' %}" class="glightbox"><img src="{% static 'img/akcja3.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja4.jpg' %}" class="glightbox"><img src="{% static 'img/akcja4.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja5.jpg' %}" class="glightbox"><img src="{% static 'img/akcja5.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja6.jpg' %}" class="glightbox"><img src="{% static 'img/akcja6.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja7.jpg' %}" class="glightbox"><img src="{% static 'img/akcja7.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja8.jpg' %}" class="glightbox"><img src="{% static 'img/akcja8.jpg' %}" alt=""></a>
+  <a href="{% static 'img/akcja9.jpg' %}" class="glightbox"><img src="{% static 'img/akcja9.jpg' %}" alt=""></a>
+</div>
+
+<div class="training-more">
+  <a href="galeria/" >Zobacz więcej zdjęć i wideo z moich szkoleń w Galerii!</a>
+</div>
+</section>
+
+<section class="process">
+  <div class="container">
+    <h2>Zapisz się na konsultację lub szkolenie</h2>
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Wybierz dogodny termin</h3>
+        <p>Przejdź do kalendarza lub listy szkoleń i wybierz pasujący Ci dzień oraz godzinę.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Wypełnij krótki formularz</h3>
+        <p>Podaj dane swoje i psa, abyśmy mogli przygotować się do spotkania.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Potwierdź zapis</h3>
+        <p>Po wysłaniu formularza otrzymasz potwierdzenie i wszystkie potrzebne informacje na maila.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>Spotkajmy się!</h3>
+        <p>W ustalonym terminie rozpoczniemy pracę nad poprawą relacji z Twoim pupilem.</p>
+      </div>
+    </div>
+  </div>
+  <div class="signing-buttons">
+        <a href="konsultacje" class="hero-btn-outline">Umów konsultację</a>
+        <a href="szkolenia" class="hero-btn-solid">Zapisz się na szkolenie</a>
+      </div>
+
+</section>
+
+
+{% endblock %}
