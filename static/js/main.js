@@ -189,3 +189,8 @@ document.addEventListener('DOMContentLoaded', function () {
     autoplayVideos: false
   });
 });
+
+function toggleMenu() {
+  const menu = document.querySelector('.menu ul');
+  menu.classList.toggle('open');
+}
