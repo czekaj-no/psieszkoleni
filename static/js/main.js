@@ -177,3 +177,15 @@ document.addEventListener("DOMContentLoaded", function() {
     trainingsList.appendChild(item);
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    loop: true,
+    touchNavigation: true,
+    keyboardNavigation: true,
+    closeButton: true,
+    arrows: true,
+    autoplayVideos: false
+  });
+});
